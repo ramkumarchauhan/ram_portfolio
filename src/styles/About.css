@@ -1,0 +1,64 @@
+.about-section {
+  background: radial-gradient(circle at top left, #0d1117, #010409);
+  color: #e6edf3;
+  min-height: 100vh;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #58a6ff;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
+}
+
+.about-card {
+  background: rgba(22, 27, 34, 0.8);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  box-shadow: 0 0 25px rgba(88, 166, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.skills-card {
+  background: rgba(22, 27, 34, 0.8);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skills-card:hover {
+  box-shadow: 0 0 25px rgba(88, 166, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.icon {
+  color: #58a6ff;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 5px rgba(88, 166, 255, 0.6));
+}
+
+.sub-icon {
+  color: #79c0ff;
+  margin-right: 8px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-card,
+  .skills-card {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,139 @@
+#home {
+  margin-top: -70px; /* removes gap created by body padding-top */
+}
+
+
+.home-container {
+  position: relative;
+  z-index: 2;
+  color: #e6edf3;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Floating glowing orbs */
+.floating-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  filter: blur(60px);
+  animation: float 10s ease-in-out infinite alternate;
+}
+
+.orb1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(88, 166, 255, 0.5);
+  top: 10%;
+  left: 20%;
+}
+
+.orb2 {
+  width: 250px;
+  height: 250px;
+  background: rgba(100, 255, 218, 0.4);
+  bottom: 15%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.orb3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 121, 198, 0.4);
+  top: 60%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) scale(1); }
+  to { transform: translateY(-40px) scale(1.05); }
+}
+
+/* Name styling — no glow */
+.text-name {
+  color: #58a6ff;
+  font-weight: 700;
+}
+
+/* Accent text (for Java, Python, React) */
+.text-accent {
+  color: #58a6ff;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+}
+
+/* Glow text (only for typing lines) */
+.glow-text {
+  text-shadow: 0 0 12px rgba(88, 166, 255, 0.7);
+}
+
+/* Profile pic */
+.profile-pic {
+  max-width: 180px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(88, 166, 255, 0.5);
+}
+
+/* Button */
+/* --- Glowing Button Effects --- */
+.btn-outline-light, 
+.btn-info {
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-outline-light:hover, 
+.btn-info:hover {
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.6), 0 0 20px rgba(0, 200, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Make info button look premium */
+.btn-info {
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+  border: none;
+}
+
+.btn-info:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: #fff !important;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+}
+
+
+.text-light {
+  color: #f0f6fc !important;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .fs-4 {
+    font-size: 1.1rem;
+  }
+  .profile-pic {
+    max-width: 130px;
+  }
+}

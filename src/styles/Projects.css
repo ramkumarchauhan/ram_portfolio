@@ -1,0 +1,149 @@
+.projects-section {
+  background: radial-gradient(circle at bottom right, #0d1117, #010409);
+  color: #e6edf3;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.section-title {
+  color: #58a6ff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(88, 166, 255, 0.6);
+}
+
+.filter-buttons .btn {
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons .btn:hover,
+.filter-buttons .btn.active {
+  background-color: #58a6ff;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.7);
+}
+
+.project-card {
+  background: rgba(22, 27, 34, 0.85);
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(88, 166, 255, 0.25);
+}
+
+.project-card h5 {
+  color: #58a6ff;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.project-card .tech {
+  display: inline-block;
+  color: #79c0ff;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.proj-icon {
+  font-size: 2rem;
+  color: #79c0ff;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 6px rgba(121, 192, 255, 0.5));
+}
+
+/* Modal styling */
+.project-modal {
+  background-color: #161b22;
+  color: #e6edf3;
+  border-radius: 10px;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+}
+
+.btn-glow {
+  background-color: #58a6ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.7);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Make filter buttons wrap neatly on mobile */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.filter-btn {
+  background: transparent;
+  color: #9ec7ff;
+  border: 1px solid #1f6feb;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #1f6feb;
+  color: #fff;
+  box-shadow: 0 0 10px #1f6feb;
+}
+
+.filter-btn.active {
+  background: #238636;
+  color: white;
+  border-color: #238636;
+  box-shadow: 0 0 10px #238636;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #1f6feb;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .filter-btn {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-btn {
+    flex: 1 1 100%;
+  }
+}
