@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ramkumarchauhan/ram_portfolio.git/static/css/main.ebd38d76.css",
-    "main.js": "/ramkumarchauhan/ram_portfolio.git/static/js/main.f2a542ef.js",
-    "static/media/profile-pic.jpg": "/ramkumarchauhan/ram_portfolio.git/static/media/profile-pic.e312c04f3642472c8182.jpg",
-    "static/media/Ram_N.pdf": "/ramkumarchauhan/ram_portfolio.git/static/media/Ram_N.a624d91a57254590aaa3.pdf",
-    "index.html": "/ramkumarchauhan/ram_portfolio.git/index.html",
-    "main.ebd38d76.css.map": "/ramkumarchauhan/ram_portfolio.git/static/css/main.ebd38d76.css.map",
-    "main.f2a542ef.js.map": "/ramkumarchauhan/ram_portfolio.git/static/js/main.f2a542ef.js.map"
+    "main.css": "/ram_portfolio/static/css/main.ebd38d76.css",
+    "main.js": "/ram_portfolio/static/js/main.d3c9302f.js",
+    "static/media/profile-pic.jpg": "/ram_portfolio/static/media/profile-pic.e312c04f3642472c8182.jpg",
+    "static/media/Ram_N.pdf": "/ram_portfolio/static/media/Ram_N.a624d91a57254590aaa3.pdf",
+    "index.html": "/ram_portfolio/index.html",
+    "main.ebd38d76.css.map": "/ram_portfolio/static/css/main.ebd38d76.css.map",
+    "main.d3c9302f.js.map": "/ram_portfolio/static/js/main.d3c9302f.js.map"
   },
   "entrypoints": [
     "static/css/main.ebd38d76.css",
-    "static/js/main.f2a542ef.js"
+    "static/js/main.d3c9302f.js"
   ]
 }
